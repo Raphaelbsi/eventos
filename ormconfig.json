@@ -1,0 +1,5 @@
+{
+  "type": "MySQL",
+  "username": "root",
+  "password": "docker"
+}
