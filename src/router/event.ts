@@ -1,14 +1,11 @@
 import { Router } from "express";
 import { EventController } from "../controller/event";
-import { UserController } from "../controller/user";
 import { Event } from "../entity/event";
-
 
 
 export const EventRouter = Router();
 
 const Controller = new EventController();
-const UsrController = new UserController();
 
 EventRouter.get('/', async (_req, res) => {
   const events = await Controller.find();

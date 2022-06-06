@@ -30,16 +30,3 @@ UserRouter.get('/:id', async (req, res) => {
   const user = await Controller.findById(+id);
   res.json(user);
 });
-
-// UserRouter.get('/events/:id', async (req, res) => {
-//   const { id } = req.params;
-//   const events = await Controller.getAllEventPerId(+id);
-//   res.json(events);
-// });
-
-// UserRouter.put('/events/:id', async (req, res) => {
-//   const { id } = req.params;
-//   const events = req.body;
-//   const update = await Controller.updateEventPerId(events, +id);
-//   res.json(update);
-// });
